@@ -39,6 +39,7 @@ public class Library {
             booksOfSt.remove(book);
             student.setBooks(booksOfSt);
             String str = (book.getName() + " была взята от студента " + student.getName());
+            System.out.println(str);
         }else {
             System.out.println("Нет такой книги у студента!");
         }

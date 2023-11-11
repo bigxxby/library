@@ -34,9 +34,9 @@ public class Student {
     }
 
     public void showStudent() {
-        String str = "";
+        StringBuilder str = new StringBuilder();
         for (Book b : books) {
-            str += b.getName() + "\n";
+            str.append(b.getName()).append("\n");
         }
         System.out.println(ticketId + " " + name);
         System.out.println(str);
