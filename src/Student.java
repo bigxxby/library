@@ -27,6 +27,7 @@ public class Student {
         this.ticketId = ticketId;
         this.name = name;
         this.books = books;
+        this.books = new ArrayList<Book>();
     }
 
     public String getName() {
@@ -41,6 +42,7 @@ public class Student {
         System.out.println(ticketId + " " + name);
         System.out.println(str);
     }
+
     public void dayPast() { // абстрактный метод "одного дня", прошел один день
         for (Book books : getBooks()) {
 

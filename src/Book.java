@@ -14,6 +14,14 @@ public class Book {
         this.borrowedTime = borrowedTime;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public Book(int id, String name, String author) {
         this.id = id;
         this.name = name;
